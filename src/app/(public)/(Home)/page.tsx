@@ -2,6 +2,7 @@ import Footer from "@/widget/Footer/Footer";
 import styles from "./page.module.css";
 import Advantages from "./section/advantages/Advantages";
 import AboutSection from "./section/about/About";
+import Populars from "./sections/Populars/Populars";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Advantages />
       <AboutSection/>
       <Footer />
+      <Populars />
     </>
   );
 }
