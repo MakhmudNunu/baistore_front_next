@@ -1,0 +1,15 @@
+.products {
+
+    h2 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+    }
+
+    .productsList {
+        display: flex;
+        column-gap: 24px;
+        margin: 24px 0 0;
+    }
+}

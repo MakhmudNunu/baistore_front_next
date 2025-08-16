@@ -1,4 +1,5 @@
 export interface IProduct {
+    image?: string 
     id: number
     type: string
     name: string

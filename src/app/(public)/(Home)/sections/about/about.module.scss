@@ -2,8 +2,8 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 20px 0;
-
+  padding: 20px 0;
+  background: #F2F3F7;
   .content {
     display: flex;
     column-gap: 30px;
@@ -11,7 +11,7 @@
   }
 
   .block {
-    background: #f9fafb;
+    background: white;
     border: 1px solid #dbe0e8;
     border-radius: 15px;
     padding: 20px 10px;
@@ -42,25 +42,26 @@
     }
 
     .button {
-        border: none;
-        border-radius: 30px;
-        padding: 10px 20px;
-        width: 261px;
-        height: 37px;
-        background: #00a6e3;
-        cursor: pointer;
-        font-family: var(--font-family);
-        font-weight: 700;
-        font-size: 14px;
-        text-align: center;
-        color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      width: 261px;
+      height: 37px;
+      background: #00a6e3;
+      cursor: pointer;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
     }
 
   }
 
   .infoCard {
-    background: #f9fafb;
-    border-radius: 10px;
+    background: white;
+    border: 1px solid #dbe0e8;
+    border-radius: 15px;
     padding: 20px;
     flex: 2 1 400px;
   }

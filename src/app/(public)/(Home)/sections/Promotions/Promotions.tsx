@@ -1,8 +1,8 @@
 import Products from '@/widget/Products/Products'
-import styles from './Populars.module.scss'
+import styles from './Promotions.module.scss'
 import { IProduct } from '@/shared/type/product.interface'
 
-export default function Populars() {
+export default function Promotions() {
 
     const products: IProduct[] = [
         {
@@ -57,10 +57,10 @@ export default function Populars() {
 
 
     return (
-        <section className={styles.populars}>
+        <section className={styles.promotions}>
             <div className={`container ${styles.container}`}>
                 <div className={styles.content}>
-                    <Products products={products} title='Популярные товары' />
+                    <Products products={products} title='Акции' />
                 </div>
             </div>
         </section>

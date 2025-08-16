@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./about.module.scss";
+import Logo from "@/shared/ui/Logo";
 
 export default function AboutSection() {
     return (
@@ -7,7 +8,7 @@ export default function AboutSection() {
             <div className={`container ${styles.container}`}>
                 <div className={styles.content}>
                     <div className={styles.block}>
-                        <h1 className={styles.title}>ВАISTORE</h1>
+                        <Logo />
                         <div className={styles.address}>
                             <p>Барклая 8, Старая горбушка</p>
                             <p>+7 977 371-88-80</p>
