@@ -1,0 +1,47 @@
+.advantages {
+    padding: 40px 0;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card {
+        padding: 16px 23px;
+        border-radius: 30px;
+        width: 599px;
+        height: 212px;
+        text-align: start;
+        position: relative;
+        border: #fff;
+
+        h3 {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 40px;
+            color: #fff;
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .button {
+            border: 1px solid #fff;
+            border-radius: 30px;
+            padding: 10px 20px;
+            width: 148px;
+            height: 37px;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 14px;
+            color: #00a6e3;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}

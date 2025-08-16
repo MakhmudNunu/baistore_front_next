@@ -1,0 +1,91 @@
+.aboutSection {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  background: #F2F3F7;
+  .content {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+  }
+
+  .block {
+    background: white;
+    border: 1px solid #dbe0e8;
+    border-radius: 15px;
+    padding: 20px 10px;
+    width: 326px;
+    height: 277px;
+
+    .title {
+      color: #333;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .address {
+      margin-bottom: 25px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .address p {
+      margin: 8px 0;
+      color: #555;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .button {
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      width: 261px;
+      height: 37px;
+      background: #00a6e3;
+      cursor: pointer;
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+      color: #fff;
+    }
+
+  }
+
+  .infoCard {
+    background: white;
+    border: 1px solid #dbe0e8;
+    border-radius: 15px;
+    padding: 20px;
+    flex: 2 1 400px;
+  }
+
+  .title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 28px;
+    letter-spacing: 0.16em;
+  }
+
+  .text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .showMore {
+    display: inline-block;
+    margin-top: 10px;
+    color: #6b7280;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+}

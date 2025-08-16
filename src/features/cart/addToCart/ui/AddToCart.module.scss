@@ -1,0 +1,18 @@
+.addToCart {
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 134px;
+    height: 37px;
+    background: #00a6e3;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background: #028ec1;
+    }
+}
