@@ -12,7 +12,15 @@
     border: none;
     cursor: pointer;
     transition: 0.3s;
+
     &:hover {
         background: #028ec1;
+    }
+}
+
+@media (max-width: 390px) {
+    .addToCart {
+        width: 120px;
+        height: 37px;
     }
 }

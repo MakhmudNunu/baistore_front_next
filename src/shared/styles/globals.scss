@@ -20,3 +20,9 @@ body {
   width: 1240px;
   margin: 0 auto;
 }
+
+@media (max-width: 390px) {
+  .container {
+    width: 95%;
+  }
+}

@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import Hero from "@/widget/Hero/Hero";
+import Hero from "@/app/(public)/(Home)/sections/Hero/Hero";
 import Advantages from "./sections/advantages/Advantages";
 import AboutSection from "./sections/about/About";
 import Populars from "./sections/Populars/Populars";
