@@ -2,8 +2,9 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 40px 0;
   background: #F2F3F7;
+
   .content {
     display: flex;
     column-gap: 30px;
@@ -18,14 +19,6 @@
     width: 326px;
     height: 277px;
 
-    .title {
-      color: #333;
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
     .address {
       margin-bottom: 25px;
       font-family: var(--font-family);
@@ -34,7 +27,7 @@
     }
 
     .address p {
-      margin: 8px 0;
+      margin: 18px 0;
       color: #555;
       font-family: var(--font-family);
       font-weight: 500;
@@ -88,4 +81,18 @@
     cursor: pointer;
   }
 
+}
+
+@media (max-width : 390px) {
+  .aboutSection {
+    padding: 20px 0;
+
+    .block {
+      display: none;
+    }
+
+    .title {
+      margin-bottom: 20px;
+    }
+  }
 }

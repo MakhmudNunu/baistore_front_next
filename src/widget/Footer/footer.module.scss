@@ -20,36 +20,15 @@
         height: 277px;
         color: #fff;
 
-        .title {
-            color: #fff;
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
         .address {
             margin-bottom: 25px;
             line-height: 1.6;
         }
 
         .address p {
-            margin: 8px 0;
+            margin: 18px 0;
             color: #fff;
             font-size: 16px;
-        }
-
-        .feedback {
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        .feedbackTitle {
-            color: #fff;
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 15px;
         }
 
     }
@@ -130,5 +109,17 @@
                 color: #00a3e0;
             }
         }
+    }
+}
+
+@media (max-width : 390px){
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+    .menuBlock{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
     }
 }

@@ -1,4 +1,5 @@
 import styles from './advantages.module.scss'
+
 export default function Advantages() {
   return (
     <section className={styles.advantages}>
