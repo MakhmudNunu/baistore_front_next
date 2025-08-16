@@ -9,12 +9,10 @@ export default function Footer() {
         <div className={styles.content}>
           <div className={styles.block}>
             <Logo color={"white"} />
-
             <div className={styles.address}>
               <p>Барклая 8, Старая горбушка</p>
               <p>+7 977 371-88-80</p>
             </div>
-
             <button className={styles.button}>Обратная связь</button>
           </div>
           <div className={styles.menuBlock}>
