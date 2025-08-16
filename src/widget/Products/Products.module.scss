@@ -1,15 +1,46 @@
 .products {
-
     h2 {
         font-family: var(--font-family);
         font-weight: 700;
         font-size: 20px;
         color: #000;
+        z-index: 100;
     }
 
     .productsList {
         display: flex;
         column-gap: 24px;
         margin: 24px 0 0;
+        overflow-x: auto; // горизонтальная прокрутка
+        scroll-snap-type: x mandatory; // включаем "прилипание"
+        scroll-behavior: smooth;
+        padding-bottom: 8px;
+
+        &::-webkit-scrollbar {
+            display: none; // скрываем скроллбар
+        }
+
+        >* {
+            flex: 0 0 auto; // запрещаем сжатие
+            scroll-snap-align: start; // каждый продукт "прилипает"
+        }
     }
+}
+
+
+@media (max-width: 390px) {
+    .products {
+        z-index: 100;
+
+        h2 {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+        .productsList {
+            column-gap: 10px;
+        }
+    }
+
 }

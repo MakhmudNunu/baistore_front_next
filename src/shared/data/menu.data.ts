@@ -1,27 +1,27 @@
 
 export const MENU_DATA = [
     {
-        image: '/data/Package.svg',
+        image: '/assets/Package.svg',
         title: 'Каталог',
         href: '/'
     },
     {
-        image: '/data/Package.svg',
+        image: '/assets/Package.svg',
         title: 'Мои заказы',
         href: '/'
     },
         {
-        image: '/data/Component 1.png',
+        image: '/assets/Component 1.png',
         title: 'Избранное',
         href: '/'
     },
     {
-        image: '/data/shopping-cart.svg',
+        image: '/assets/shopping-cart.svg',
         title: 'Корзина',
         href: '/'
     },
     {
-        image: '/data/Component 1.svg',
+        image: '/assets/Component 1.svg',
         title: 'Войти',
         href: '/'
     }

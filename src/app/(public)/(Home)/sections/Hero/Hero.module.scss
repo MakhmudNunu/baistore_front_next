@@ -1,0 +1,106 @@
+.hero {
+    height: calc(100vh - 91px);
+
+    .container {
+        height: inherit;
+
+        .content {
+            width: inherit;
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .imageContainer {
+                width: 1240px;
+                height: 90%;
+                position: relative;
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    position: absolute;
+                    z-index: 1;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-30%, -50%);
+
+                    .aliceLogo {
+                        background: white;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+
+                    .text {
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+
+                        h1 {
+                            font-family: var(--font-family);
+                            font-weight: 500;
+                            font-size: 40px;
+                        }
+
+                        h3 {
+                            font-family: sans-serif;
+                            font-weight: lighter;
+                            font-size: 24px;
+                            margin: 10px 0 30px;
+                        }
+
+                        p {
+                            font-family: sans-serif;
+                            font-weight: 100;
+                            font-size: 14px;
+                            color: rgba(255, 255, 255, 0.786);
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .hero {
+        height: calc(100vh - 560px);
+        .container {
+            .content {
+                .imageContainer {
+                    width: 100%;
+                    .info {
+                        row-gap: 10px;
+                        left: 50%;
+                        .aliceLogo {
+                            width: 35px;
+                            height: 35px;
+
+                        }
+
+                        .text {
+                            h1 {
+                                font-size: medium;
+                            }
+
+                            h3 {
+                                margin: 5px 0 10px;
+                                font-size: medium;
+                            }
+
+                            p {
+                                font-size: x-small;
+                                line-height: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -43,16 +43,16 @@ export default function Populars() {
             isFavorite: false,
             isAddedToCart: false,
         },
-        // {
-        //     id: 5,
-        //     type: "smartwatch",
-        //     name: "Garmin Fenix 7",
-        //     price: 699,
-        //     discount: 15,
-        //     count: 10,
-        //     isFavorite: true,
-        //     isAddedToCart: true,
-        // },
+        {
+            id: 5,
+            type: "smartwatch",
+            name: "Garmin Fenix 7",
+            price: 699,
+            discount: 15,
+            count: 10,
+            isFavorite: true,
+            isAddedToCart: true,
+        },
     ]
 
 
