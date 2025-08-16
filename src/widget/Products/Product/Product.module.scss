@@ -1,0 +1,100 @@
+.product {
+    border-radius: 20px;
+    padding: 10px;
+    width: 301px;
+    height: 417px;
+    text-align: center;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    .imageContainer {
+        position: relative;
+
+        .image {
+            border: 1px solid #dbe0e8;
+            border-radius: 15px;
+            width: 281px;
+            height: 249px;
+            background: gray;
+        }
+
+        h5 {
+            border-radius: 30px;
+            padding: 10px;
+            width: 53px;
+            height: 34px;
+            backdrop-filter: blur(20px);
+            background: linear-gradient(180deg, rgba(0, 166, 227, 0.5) 0%, #b3efff 100%);
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            left: 6px;
+            top: 6px;
+        }
+    }
+
+    .type {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        color: #4b5667;
+        margin: 14px 0 4px;
+    }
+
+    .name {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: #000;
+    }
+
+    .priceAndCount {
+
+        display: flex;
+        justify-content: space-between;
+        margin: 14px 0;
+        .count {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 4px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            color: #000;
+        }
+
+        .priceContainer {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            .price,
+            .newPrice {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
+                color: #000;
+            }
+
+            .oldPrice {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                text-decoration: line-through;
+                text-align: center;
+                color: #4b5667;
+            }
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}

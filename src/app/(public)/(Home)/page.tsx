@@ -1,16 +1,17 @@
-import Footer from "@/widget/Footer/Footer";
-import styles from "./page.module.css";
-import Advantages from "./section/advantages/Advantages";
-import AboutSection from "./section/about/About";
+import Advantages from "./sections/advantages/Advantages";
+import AboutSection from "./sections/about/About";
 import Populars from "./sections/Populars/Populars";
+import NewArrivals from "./sections/NewArrivals/NewArrivals";
+import Promotions from "./sections/Promotions/Promotions";
 
 export default function Home() {
   return (
     <>
-      <Advantages />
-      <AboutSection/>
-      <Footer />
       <Populars />
+      <NewArrivals />
+      <Promotions />
+      <Advantages />
+      <AboutSection />
     </>
   );
 }
