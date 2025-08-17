@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './advantages.module.scss'
 
 export default function Advantages() {
@@ -11,6 +12,9 @@ export default function Advantages() {
             <button className={styles.button}>Сделать заказ</button>
           </div>
           <div className={styles.card}>
+            <div className={styles.image}>
+              <Image src={'/assets/home-appliances-png-282511.svg'} fill alt='' />
+            </div>
             <h3>От чайника до подушки</h3>
             <p>Всё в одном месте</p>
             <button className={styles.button}>Сделать заказ</button>

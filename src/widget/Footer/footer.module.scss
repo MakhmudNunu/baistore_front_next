@@ -65,7 +65,7 @@
         }
 
         ul {
-            max-height: 262px;
+            height: 262px;
             list-style: none;
             padding: 0;
             display: flex;
@@ -112,14 +112,23 @@
     }
 }
 
-@media (max-width : 390px){
-    .content {
-        display: flex;
-        flex-direction: column;
-    }
-    .menuBlock{
-        display: flex;
-        flex-direction: column;
-        text-align: start;
+@media (max-width : 390px) {
+    .footer {
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menuBlock {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+
+            ul {
+                height: auto;
+                column-gap: 10px;
+                row-gap: 0;
+            }
+        }
     }
 }
