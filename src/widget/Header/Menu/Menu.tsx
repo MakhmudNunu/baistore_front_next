@@ -8,7 +8,7 @@ export default function Menu() {
         <nav className={styles.menuContainer}>
             <ul className={styles.menu}>
                 {
-                    MENU_DATA.map((item, index) => {
+                    MENU_DATA.map((item) => {
                         return (
                             <MenuItem key={item.title} menuItem={item} />
                         )

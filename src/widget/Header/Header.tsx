@@ -1,8 +1,8 @@
-import { MENU_DATA } from '@/shared/data/menu.data'
 import styles from './Header.module.scss'
 import Image from 'next/image'
 import Menu from './Menu/Menu'
 import Logo from '@/shared/ui/Logo'
+import Link from 'next/link'
 
 
 export default function Header() {
@@ -19,6 +19,12 @@ export default function Header() {
                         <input type="search" name="ad" id="1" placeholder='Поиск' />
                     </div>
                     <Menu />
+
+                    <Link href={'/login'} className={styles.login}>
+                        <Image src={'/assets/Component 1.svg'} alt='image' width={24} height={24} />
+                        <span>Войти</span>
+                    </Link>
+
                 </div>
             </div>
         </header>

@@ -7,40 +7,64 @@
         z-index: 100;
     }
 
-    .productsList {
+    .keen-slider-wrapper {
+        margin-top: 24px;
+        position: relative; // для позиционирования кнопок
+    }
+
+    .keen-slider {
         display: flex;
-        column-gap: 24px;
-        margin: 24px 0 0;
-        overflow-x: auto; // горизонтальная прокрутка
-        scroll-snap-type: x mandatory; // включаем "прилипание"
-        scroll-behavior: smooth;
-        padding-bottom: 8px;
+    }
 
-        &::-webkit-scrollbar {
-            display: none; // скрываем скроллбар
-        }
+    .keen-slider__slide {
+        flex: 0 0 auto; // важно, чтобы слайды не растягивались
+        width: calc((100% - 3 * 24px) / 4); // 4 слайда с gap 24px
+    }
 
-        >* {
-            flex: 0 0 auto; // запрещаем сжатие
-            scroll-snap-align: start; // каждый продукт "прилипает"
+    .paginationContainer {
+        display: flex;
+        justify-content: center; // центрируем весь контейнер
+        margin-top: 16px;
+
+        .pagination {
+            display: flex;
+            gap: 12px;
+            padding: 6px 12px; // внутренний отступ для фона
+            background: #dbe0e8; // фон контейнера
+            border-radius: 20px; // скругление контейнера
+            align-items: center;
+
+            button {
+                width: 8px;
+                height: 8px;
+                background: #ffffff;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:disabled {
+                    cursor: default;
+                    background: #a2a2a2;
+                }
+            }
         }
     }
 }
 
-
+// Адаптив для мобилок
 @media (max-width: 390px) {
     .products {
-        z-index: 100;
-
         h2 {
-            font-family: var(--font-family);
-            font-weight: 700;
             font-size: 20px;
-            color: #000;
+            margin: 20px 10px 20px 0;
         }
-        .productsList {
-            column-gap: 10px;
+
+        .keen-slider__slide {
+            width: calc((100% - 1 * 10px) / 2); // 2 слайда с gap 10px
+        }
+
+        .paginationContainer {
+            display: none;
         }
     }
-
 }

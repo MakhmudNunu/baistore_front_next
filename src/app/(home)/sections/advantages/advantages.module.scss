@@ -1,6 +1,6 @@
 .advantages {
     padding: 40px 0;
-
+    background: white;
     .content {
         display: flex;
         justify-content: space-between;
@@ -11,7 +11,7 @@
         border-radius: 30px;
         width: 599px;
         height: 212px;
-        text-align: start;
+        text-align: flex-start;
         position: relative;
         border: 1px solid #fff;
         background: linear-gradient(120deg, rgb(0, 166, 227) 0%, rgba(0, 166, 227, 0.2) 100%);

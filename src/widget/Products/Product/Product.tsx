@@ -3,6 +3,7 @@ import { IProduct } from "@/shared/type/product.interface";
 import styles from './Product.module.scss'
 import AddToCart from "@/features/cart/addToCart/ui/AddToCart";
 import AddToFavorite from "@/features/favorite/addToFavorite/ui/AddToFavorite";
+import Image from "next/image";
 
 interface IProductProps {
     product: IProduct
@@ -18,7 +19,9 @@ export default function Product({ product }: IProductProps) {
         <div className={styles.product}>
             {/* <Image /> */}
             <div className={styles.imageContainer}>
-                <div className={styles.image}></div>
+                <div className={styles.image}>
+                    <Image src={'/assets/AlicePortative.jpeg'} fill alt='' style={{borderRadius: 5}} />
+                </div>
                 {
                     product.discount ? (
                         <h5>Акция</h5>

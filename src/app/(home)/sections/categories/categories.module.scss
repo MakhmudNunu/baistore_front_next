@@ -1,0 +1,91 @@
+.categories {
+    padding: 80px 0 40px;
+
+    .container {
+        .content {
+            h3 {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                color: #000;
+            }
+
+            .categoriesList {
+                display: flex;
+                margin: 24px 0 44px;
+                justify-content: space-between;
+
+
+                .categoryCard {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 12px;
+
+                    .categoryImageContainer {
+                        position: relative;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        background: linear-gradient(180deg, #f708cfce 0%, #c446fe 100%);
+                        padding: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .categoryImage {
+                            position: relative;
+                            width: 77px;
+                            height: 73px;
+                            z-index: 2; 
+                        }
+                    }
+
+                    .categoryImageContainer::before {
+                        content: "";
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        right: 4px;
+                        bottom: 4px;
+                        border-radius: 50%;
+                        background: white;
+                        z-index: 1;
+                    }
+
+                    h4 {
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #000;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .categories {
+        padding: 20px 0 10px;
+        .container {
+            .content {
+                .categoriesList {
+                    margin: 14px 0;
+                    .categoryCard {
+                        .categoryImageContainer {
+                            width: 90px;
+                            height: 90px;
+                            .categoryImage {
+                                width: 67px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
