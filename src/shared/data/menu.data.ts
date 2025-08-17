@@ -19,11 +19,5 @@ export const MENU_DATA = [
         image: '/assets/shopping-cart.svg',
         title: 'Корзина',
         href: '/'
-    },
-    {
-        image: '/assets/Component 1.svg',
-        title: 'Войти',
-        href: '/'
     }
-
 ]

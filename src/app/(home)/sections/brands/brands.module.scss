@@ -1,0 +1,64 @@
+.brands {
+    padding: 80px 0 40px;
+
+    .container {
+        .content {
+            h3 {
+                font-family: var(--font-family);
+                font-weight: 700;
+                font-size: 20px;
+                color: #000;
+            }
+
+            .brandsList {
+                display: flex;
+                margin: 24px 0 44px;
+                justify-content: space-between;
+
+
+                .brandCard {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    width: 184px;
+                    height: 77px;
+                    background: white;
+
+                    .brandImage {
+                        position: relative;
+                        width: 121px;
+                        height: 47px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 390px) {
+    .brands {
+        padding: 10px;
+
+        .container {
+            .content {
+
+                .brandsList {
+                    margin: 14px 0;
+                    flex-wrap: wrap;
+                    row-gap: 5px;
+
+                    .brandCard {
+                        width: 110px;
+                        height: 47px;
+
+                        .brandImage {
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

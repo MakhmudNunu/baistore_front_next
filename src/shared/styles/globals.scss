@@ -21,6 +21,11 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 390px) {
   .container {
     width: 100%;

@@ -6,7 +6,7 @@
             display: flex;
             align-items: center;
             height: 91px;
-
+            justify-content: space-between;
             .logo {
                 display: flex;
                 justify-content: center;
@@ -36,6 +36,27 @@
                     position: absolute;
                 }
             }
+
+            .login {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 40px;
+                span {
+                    display: flex;
+                    padding-top: 2px;
+                    padding-left: 12px;
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #000;
+                }
+
+                img {
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }
@@ -43,11 +64,10 @@
 @media (max-width: 390px) {
     .header {
         background: white;
+
         .container {
             .content {
-                .logo {
-                    
-                }
+                .logo {}
 
                 .search {
                     display: none;
