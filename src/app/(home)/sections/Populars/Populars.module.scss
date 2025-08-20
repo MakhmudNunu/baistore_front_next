@@ -1,0 +1,8 @@
+.populars {
+    background: white;
+    padding: 40px 0;
+    @media (max-width: 390px) {
+        background: none;
+        padding: 10px 0;
+    }
+}

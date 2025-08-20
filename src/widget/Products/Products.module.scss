@@ -1,0 +1,70 @@
+.products {
+    h2 {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+        z-index: 100;
+    }
+
+    .keen-slider-wrapper {
+        margin-top: 24px;
+        position: relative; // для позиционирования кнопок
+    }
+
+    .keen-slider {
+        display: flex;
+    }
+
+    .keen-slider__slide {
+        flex: 0 0 auto; // важно, чтобы слайды не растягивались
+        width: calc((100% - 3 * 24px) / 4); // 4 слайда с gap 24px
+    }
+
+    .paginationContainer {
+        display: flex;
+        justify-content: center; // центрируем весь контейнер
+        margin-top: 16px;
+
+        .pagination {
+            display: flex;
+            gap: 12px;
+            padding: 6px 12px; // внутренний отступ для фона
+            background: #dbe0e8; // фон контейнера
+            border-radius: 20px; // скругление контейнера
+            align-items: center;
+
+            button {
+                width: 8px;
+                height: 8px;
+                background: #ffffff;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:disabled {
+                    cursor: default;
+                    background: #a2a2a2;
+                }
+            }
+        }
+    }
+}
+
+// Адаптив для мобилок
+@media (max-width: 390px) {
+    .products {
+        h2 {
+            font-size: 20px;
+            margin: 20px 10px 20px 0;
+        }
+
+        .keen-slider__slide {
+            width: calc((100% - 1 * 10px) / 2); // 2 слайда с gap 10px
+        }
+
+        .paginationContainer {
+            display: none;
+        }
+    }
+}

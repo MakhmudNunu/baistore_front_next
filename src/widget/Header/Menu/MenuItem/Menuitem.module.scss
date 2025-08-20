@@ -1,0 +1,23 @@
+.cataloc {
+    display: flex;
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: flex;
+            padding-top: 2px;
+            padding-left: 12px;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            color: #000;
+        }
+
+        img {
+            margin-left: 10px;
+        }
+    }
+}

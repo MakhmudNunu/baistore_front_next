@@ -1,0 +1,134 @@
+.footer {
+    background-color: #404b5a;
+    color: #fff;
+    padding: 40px 0;
+    font-family: sans-serif;
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .block {
+        background: none;
+        border: none;
+        border-radius: 15px;
+        padding: 20px 10px;
+        width: 326px;
+        height: 277px;
+        color: #fff;
+
+        .address {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .address p {
+            margin: 18px 0;
+            color: #fff;
+            font-size: 16px;
+        }
+
+    }
+
+    .button {
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        width: 261px;
+        height: 37px;
+        background: #00a6e3;
+        cursor: pointer;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .social {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        font-size: 22px;
+        color: #00a3e0;
+    }
+
+    .menuBlock {
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            height: 262px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0;
+            column-gap: 60px;
+            row-gap: 10px;
+
+            li {
+                margin-bottom: 8px;
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+
+            li:hover {
+                color: #00a3e0;
+            }
+        }
+    }
+
+    .menuBlockRight {
+
+        h3 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        ul {
+
+            row-gap: 10px;
+
+            li {
+                margin-bottom: 8px;
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+
+            li:hover {
+                color: #00a3e0;
+            }
+        }
+    }
+}
+
+@media (max-width : 390px) {
+    .footer {
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menuBlock {
+            display: flex;
+            flex-direction: column;
+            text-align: flex-start;
+
+            ul {
+                height: auto;
+                column-gap: 10px;
+                row-gap: 0;
+            }
+        }
+    }
+}

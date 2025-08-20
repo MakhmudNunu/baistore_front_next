@@ -1,0 +1,35 @@
+.addToFavorite {
+    border: 1px solid #4b5667;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 134px;
+    height: 37px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    background: none;
+    transition: all 0.3s;
+
+    &:hover {
+        background: #eaeaea;
+    }
+}
+
+.addToFavoriteMobile {
+    display: none;
+}
+
+@media (max-width: 390px) {
+    .addToFavorite {
+        display: none;
+    }
+
+    .addToFavoriteMobile {
+        display: block;
+        background: none;
+        border: none;
+    }
+}

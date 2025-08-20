@@ -1,0 +1,12 @@
+.menuContainer {
+    .menu {
+        display: flex;
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .menuContainer {
+        display: none;
+    }
+}

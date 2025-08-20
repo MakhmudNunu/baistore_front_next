@@ -1,0 +1,22 @@
+.brandsList {
+    display: flex;
+    margin: 24px 0 44px;
+    justify-content: space-between;
+
+}
+
+
+
+@media (max-width: 390px) {
+
+
+    .brandsList {
+        margin: 14px 0;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        .skeleton {
+            height: 1000px;
+        }
+    }
+
+}

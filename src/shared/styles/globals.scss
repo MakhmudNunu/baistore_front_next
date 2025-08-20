@@ -1,3 +1,10 @@
+:root {
+  --font-family: "Tilda Sans VF", sans-serif;
+  --second-family: "Tilda Sans", sans-serif;
+  --third-family: "Ubuntu", sans-serif;
+  --font3: "Epilogue", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,23 @@
   list-style: none;
 }
 
+body {
+  background: #F2F3F7;
+}
+
 .container {
   width: 1240px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 100%;
+    padding: 0 5px 0 5px;
+  }
 }
