@@ -1,0 +1,29 @@
+.brandCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 184px;
+    height: 77px;
+    background: white;
+
+    .brandImage {
+        position: relative;
+        width: 121px;
+        height: 47px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .brandCard {
+        width: 110px;
+        height: 47px;
+
+        .brandImage {
+            width: 90px;
+        }
+    }
+
+
+}

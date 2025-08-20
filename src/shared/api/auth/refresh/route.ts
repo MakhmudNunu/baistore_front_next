@@ -25,11 +25,12 @@ export async function POST() {
 
   response.cookies.set("accessToken", data.accessToken, {
     httpOnly: true,
-    secure: true,
-    sameSite: "strict",
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
     path: "/",
     maxAge: 60 * 15,
   });
+
 
   return response;
 }

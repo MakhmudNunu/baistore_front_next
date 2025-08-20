@@ -123,13 +123,13 @@
         }
 
         .name {
-            height: 50px;
+            height: 40px;
         }
 
         .priceAndCount {
             flex-direction: column;
             align-items: flex-start;
-            margin: 14px 0;
+            margin: 0;
 
             .priceContainer {
                 display: flex;

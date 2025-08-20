@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from './categories.module.scss'
+import { ICategory } from "@/shared/type/category.interface"
 
 export const revalidate = 1000
 
@@ -16,15 +17,13 @@ export default async function CategoriesPage() {
 
     const categories = await res.json()
 
-    console.log(categories)
-
     return (
         <section className={styles.categories}>
             <div className={`container ${styles.container}`}>
                 <div className={styles.content}>
                     <h3>Популярные категории</h3>
                     <div className={styles.categoriesList}>
-                        {categories.filter((item: any, index: number) => index <= 2).map((category: any) => (
+                        {categories.filter((item: ICategory, index: number) => index <= 2).map((category: ICategory) => (
                             <div key={category.id} className={styles.categoryCard}>
                                 <div className={styles.categoryImageContainer}>
                                     <div className={styles.categoryImage}>
