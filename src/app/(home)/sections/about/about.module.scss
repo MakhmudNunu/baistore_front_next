@@ -48,6 +48,10 @@
       text-align: center;
       color: #fff;
     }
+    .button:hover{
+      background: #0184b3;
+      transition: 0.5s;
+    }
 
   }
 
@@ -93,6 +97,30 @@
 
     .title {
       margin-bottom: 20px;
+    }
+
+    .infoCard {
+      border: 0.83px solid #dbe0e8;
+      border-radius: 12px;
+      padding: 10px 15px;
+      width: 90%;
+      height: 320px;
+
+      .title {
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 24px;
+        letter-spacing: 0.16em;
+        color: #000;
+      }
+
+      .text {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 17px;
+        color: #000;
+        margin: 15px 0;
+      }
     }
   }
 }
